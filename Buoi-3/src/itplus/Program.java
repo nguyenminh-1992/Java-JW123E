@@ -23,17 +23,6 @@ public class Program {
 		position2.id  = 2;
 		position2.name = "Student";
 		
-		Clazz class1 = new Clazz();
-		class1.id = 1;
-		class1.name = "IT1";
-		
-		Clazz class2 = new Clazz();
-		class2.id = 2;
-		class2.name = "IT2";
-		
-		Clazz class3 = new Clazz();
-		class3.id = 1;
-		class3.name = "IT3";
 		
 		Account account1 = new Account();
 		account1.id = 1;
@@ -58,6 +47,23 @@ public class Program {
 		account3.gender = Gender.MALE;
 		account3.positionid = position1;
 		account3.departmentid = department1;
+		
+		Account[] IT1 = {account1, account2, account3};
+		Account[] IT2 = {account1, account3};
+		
+		Clazz class1 = new Clazz();
+		class1.id = 1;
+		class1.name = "IT1";
+		class1.study = IT1;
+		
+		Clazz class2 = new Clazz();
+		class2.id = 2;
+		class2.name = "IT2";
+		class2.study = IT2;
+		
+		Clazz class3 = new Clazz();
+		class3.id = 3;
+		class3.name = "IT3";
 		
 	}
 
