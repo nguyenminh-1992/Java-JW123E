@@ -64,6 +64,10 @@ public class Program {
 		Clazz class3 = new Clazz();
 		class3.id = 3;
 		class3.name = "IT3";
+		// In thong tin cac account cua lop class1
+		
+		System.out.println(account1);
+		System.out.println(account2);
 		
 	}
 
