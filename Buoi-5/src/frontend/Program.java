@@ -8,6 +8,16 @@ import entity.Teacher;
 
 public class Program {
 	public static void main(String[] args) {
+			Student student1 = new Student(11, "K");
+			student1.skill = "Sport";
+			student1.setClazz("Java");
+			student1.setFee(5000);
+			
+			System.out.println(student1.skill);
+			System.out.println(student1.getClazz());
+			System.out.println(student1.getFee());
+		
+		
 			Person[] persons = new Person[10];
 			persons[0] = new Student(1,"A");
 			persons[1] = new Student(2,"B");
