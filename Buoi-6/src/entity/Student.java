@@ -16,6 +16,12 @@ public class Student {
 		this.mark = 0;
 	}
 	
+	public void diemthuong(float diem) {
+		this.mark += diem;
+		
+		//mark = mark + diem
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -40,4 +46,23 @@ public class Student {
 	public void setMark(float mark) {
 		this.mark = mark;
 	}
+
+	@Override
+	public String toString() {
+		String hienthi = id + " - " + name + " - " + hometown + " - " + mark + " - ";
+		if (this.mark < 4.0) {
+			hienthi = hienthi + "Yeu";
+		} 
+		else if (this.mark > 4.0 && this.mark < 6.0) {
+			hienthi = hienthi + "Trung binh";
+		}
+		else if (this.mark > 6.0 && this.mark < 8.0) {
+			hienthi = hienthi + "Kha";
+		}
+		else {
+			hienthi = hienthi + "Gioi";
+		}
+		return hienthi;
+	}
+	
 }

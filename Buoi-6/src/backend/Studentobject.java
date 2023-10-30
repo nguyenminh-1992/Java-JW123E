@@ -13,9 +13,9 @@ public class Studentobject {
 		student2.setMark(7);
 		student3.setMark(10);
 		
-		System.out.println(student1.getMark());
-		System.out.println(student2.getMark());
-		System.out.println(student3.getMark());
+		student2.diemthuong(2);
+		
+		System.out.println(student2);
 		
 	}
 	
