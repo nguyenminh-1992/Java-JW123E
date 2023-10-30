@@ -50,13 +50,13 @@ public class Student {
 	@Override
 	public String toString() {
 		String hienthi = id + " - " + name + " - " + hometown + " - " + mark + " - ";
-		if (this.mark < 4.0) {
+		if (this.mark <= 4.0) {
 			hienthi = hienthi + "Yeu";
 		} 
 		else if (this.mark > 4.0 && this.mark < 6.0) {
 			hienthi = hienthi + "Trung binh";
 		}
-		else if (this.mark > 6.0 && this.mark < 8.0) {
+		else if (this.mark >= 6.0 && this.mark < 8.0) {
 			hienthi = hienthi + "Kha";
 		}
 		else {

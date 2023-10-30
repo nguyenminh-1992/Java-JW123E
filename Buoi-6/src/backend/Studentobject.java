@@ -10,12 +10,15 @@ public class Studentobject {
 		Student student3 = new Student("Thai","Nha Trang");
 				
 		student1.setMark(8);
-		student2.setMark(7);
+		student2.setMark(4);
 		student3.setMark(10);
 		
 		student2.diemthuong(2);
 		
-		System.out.println(student2);
+		Student[] mangstudents = {student1, student2, student3};
+		for (Student i : mangstudents) {
+			System.out.println(i);
+		}
 		
 	}
 	
