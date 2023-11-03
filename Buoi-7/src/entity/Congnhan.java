@@ -11,7 +11,7 @@ public class Congnhan extends Canbo {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Nhap cap bac: ");
-		int capbac = sc.nextInt();
+		capBac = sc.nextInt();
 		
 	}
 
@@ -22,4 +22,10 @@ public class Congnhan extends Canbo {
 	public void setCapBac(int capBac) {
 		this.capBac = capBac;
 	}
+
+	@Override
+	public String toString() {
+		return "Cong nhan:" + super.toString()+ " - " + capBac;
+	}
+	
 }

@@ -11,7 +11,7 @@ public class Kysu extends Canbo {
 		super.themcanbo();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nhap nganh dao tao: ");
-		String nganh = sc.nextLine();
+		nganhDaoTao = sc.nextLine();
 	}
 
 	public String getNganhDaoTao() {
@@ -21,4 +21,11 @@ public class Kysu extends Canbo {
 	public void setNganhDaoTao(String nganhDaoTao) {
 		this.nganhDaoTao = nganhDaoTao;
 	}
+
+	@Override
+	public String toString() {
+		return "Cong nhan:" + super.toString()+ " - " + nganhDaoTao;
+	}
+	
+	
 }

@@ -10,7 +10,7 @@ public class Nhanvien extends Canbo {
 		super.themcanbo();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Nhap cong viec: ");
-		String congViec = sc.nextLine();
+		congViec = sc.nextLine();
 	}
 
 	public String getCongViec() {
@@ -20,4 +20,11 @@ public class Nhanvien extends Canbo {
 	public void setCongViec(String congViec) {
 		this.congViec = congViec;
 	}
+
+	@Override
+	public String toString() {
+		return "Cong nhan:" + super.toString()+ " - " + congViec;
+	}
+	
+	
 }

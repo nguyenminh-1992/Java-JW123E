@@ -13,20 +13,19 @@ public class Canbo {
 	public void themcanbo() {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Nhap ten cong nhan: ");
-		String name = sc.nextLine();
+		System.out.println("Nhap ten can bo: ");
+		hoTen = sc.nextLine();
 		
 		System.out.println("Nhap tuoi: ");
-		int tuoi = sc.nextInt();
+		tuoi = sc.nextInt();
 		
 		System.out.println("Nhap gioi tinh:  (1.Nam, 2.Nu, 3.Khac) ");
 		setGioiTinh(sc.nextInt());
+		sc.nextLine();
 		
 		System.out.println("Nhap dia chi: ");
-		String diachi = sc.nextLine();
+		diaChi = sc.nextLine();
 		
-		System.out.println("Nhap cap bac: ");
-		int capbac = sc.nextInt();
 	}
 	
 	public String getHoTen() {
@@ -65,4 +64,11 @@ public class Canbo {
 	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
+
+	@Override
+	public String toString() {
+		return "Canbo [hoTen=" + hoTen + ", tuoi=" + tuoi + ", gioiTinh=" + gioiTinh + ", diaChi=" + diaChi + "]";
+	}
+	
+	
 }
