@@ -5,11 +5,6 @@ import java.util.Scanner;
 public class Congnhan extends Canbo {
 	private int capBac;
 	
-	public Congnhan(String hoTen, int tuoi, entity.gioiTinh gioiTinh, String diaChi, int capBac) {
-		super(hoTen, tuoi, gioiTinh, diaChi);
-		this.capBac = capBac;
-	}
-	
 	@Override
 	public void themcanbo() {
 		super.themcanbo();
@@ -19,8 +14,6 @@ public class Congnhan extends Canbo {
 		int capbac = sc.nextInt();
 		
 	}
-
-	
 
 	public int getCapBac() {
 		return capBac;

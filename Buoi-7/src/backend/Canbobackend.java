@@ -33,22 +33,6 @@ public class Canbobackend {
 		}
 	}
 	
-	public void themCongnhan() {
-		System.out.println("Nhap ten cong nhan: ");
-		String name = sc.nextLine();
-		System.out.println("Nhap tuoi: ");
-		int tuoi = sc.nextInt();
-		System.out.println("Nhap gioi tinh: ");
-		String gioitinh = sc.nextLine();
-		System.out.println("Nhap dia chi: ");
-		String diachi = sc.nextLine();
-		System.out.println("Nhap cap bac: ");
-		int capbac = sc.nextInt();
-		
-		Congnhan canbo = new Congnhan(name, tuoi, null, diachi, capbac);
-		listcanbo.add(canbo);
-		
-	}
 	
 	public void Xoacanbo() {
 		

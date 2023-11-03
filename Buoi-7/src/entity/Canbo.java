@@ -9,12 +9,6 @@ public class Canbo {
 	private String diaChi;
 	
 	
-	public Canbo(String hoTen, int tuoi, entity.gioiTinh gioiTinh, String diaChi) {
-		this.hoTen = hoTen;
-		this.tuoi = tuoi;
-		this.gioiTinh = gioiTinh;
-		this.diaChi = diaChi;
-	}
 	
 	public void themcanbo() {
 		Scanner sc = new Scanner(System.in);
