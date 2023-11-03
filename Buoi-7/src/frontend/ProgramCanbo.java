@@ -25,13 +25,18 @@ public class ProgramCanbo {
 				cb.Themcanbo();
 				break;
 			case 2:
-				cb.Timkiemcanbo();
+				System.out.println("Nhap ten ng tim kiem: ");
+				String nhaptentimkiem = sc.next();
+				cb.Timkiemcanbo(nhaptentimkiem);
 				break;
 			case 3:
 				cb.Hienthicanbo();
 				break;
 			case 4:
-				cb.Xoacanbo();
+				System.out.println("Nhap ten ng muon xoa: ");
+				String nhapten = sc.next();
+				// Minh
+				cb.Xoacanbo(nhapten);
 				break;
 			case 5:
 				isCorrect = false;

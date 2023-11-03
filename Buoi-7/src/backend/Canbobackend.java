@@ -43,16 +43,33 @@ public class Canbobackend {
 	}
 	
 	
-	public void Xoacanbo() {
-		
+	public void Xoacanbo(String nhapten) {
+		for (Canbo i : listcanbo) {
+			if(i.getHoTen().equals(nhapten)) {
+				System.out.println("Da tim thay");
+				listcanbo.remove(i);
+				System.out.println("Da xoa");
+				Hienthicanbo();
+			}
+			else {
+				System.out.println("Khong thay ten nay");
+			}
+		}
 	}
 	
 	public void Hienthicanbo() {
-		
+		for (Canbo i : listcanbo) {
+			System.out.println(i);
+		}
 	}
 	
-	public void Timkiemcanbo() {
-		
+	public void Timkiemcanbo(String timkiem) {
+		for (Canbo i : listcanbo) {
+			if(i.getHoTen().equals(timkiem)) {
+				System.out.println("Da tim thay can bo");
+				System.out.println(i);
+			}
+		}
 	}
 
 }

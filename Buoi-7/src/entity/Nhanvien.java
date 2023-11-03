@@ -23,7 +23,7 @@ public class Nhanvien extends Canbo {
 
 	@Override
 	public String toString() {
-		return "Cong nhan:" + super.toString()+ " - " + congViec;
+		return "Nhan vien: " + super.toString()+ " - " + congViec;
 	}
 	
 	

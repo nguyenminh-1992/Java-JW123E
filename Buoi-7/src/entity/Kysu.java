@@ -24,7 +24,7 @@ public class Kysu extends Canbo {
 
 	@Override
 	public String toString() {
-		return "Cong nhan:" + super.toString()+ " - " + nganhDaoTao;
+		return "Ky su: " + super.toString()+ " - " + nganhDaoTao;
 	}
 	
 	
