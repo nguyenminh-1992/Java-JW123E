@@ -22,21 +22,23 @@ public class StudentBackend {
 			switch(nhap) {
 			case 1:
 				studentobj.add();
+				studentobj.indanhsach();
 				break;
 			case 2:
 				System.out.println("Nhap ID muon sua: ");
 				int idsua = sc.nextInt();
 				studentobj.edit(idsua);
+				studentobj.indanhsach();
 				break;
 			case 3:
 				System.out.println("Nhap ID muon xoa: ");
 				int idxoa = sc.nextInt();
 				studentobj.remove(idxoa);
+				studentobj.indanhsach();
 				break;
 			case 4:
 				System.out.println("Nhap ten muon tim kiem");
-				String name = sc.nextLine();
-				sc.nextLine();
+				String name = sc.next();
 				studentobj.searchByName(name);
 				break;
 			case 5:

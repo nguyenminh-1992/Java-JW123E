@@ -48,7 +48,6 @@ public class Student implements Activity, Search {
 		System.out.println("Nhap que quan: ");
 		std.country = input.inputScannerString(sc);
 		students.add(std);
-		System.out.println(students);
 	}
 	@Override
 	public void edit(int id) {
@@ -64,26 +63,37 @@ public class Student implements Activity, Search {
 	}
 	@Override
 	public void remove(int id) {
+		boolean timkiem = false;
 		for (Student i: students) {
 			if(i.getId() == id) {
-				students.remove(id);
-			}else {
-				System.out.println("Khong trung ma");
+				timkiem = true;
+				students.remove(i);
+				System.out.println("Da xoa");
 			}
+		}
+		if(timkiem==false) {
+			System.out.println("Khong tim thay");
 		}
 	}
 	@Override
 	public void searchByName(String name) {
-		for (Student i:students) {
+		boolean timkiem = false;
+		for (Student i: students) {
 			if(i.getName().equals(name)) {
+				timkiem = true;
 				System.out.println("Da tim thay");
 				System.out.println(i);
-			}else {
-				System.out.println("Khong tim thay");
+				break;
 			}
 		}
+		if (timkiem==false) {
+			System.out.println("Khong tim thay");
+		}
 	}
-
-	
-	
+	public void indanhsach() {
+		int length = students.size();
+		for (int i = 0; i < length; i++) {
+			System.out.println(students.get(i));
+		}
+	}
 }
